@@ -13,6 +13,8 @@ import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import {MatIconModule} from '@angular/material/icon';
 import { PersonalityComponent } from './personality/personality.component';
+import { FooterComponent } from './footer/footer.component';
+import { SkillComponent } from './skill/skill.component';
 
 const routes = [
   { path: '', component: HomepageComponent },
@@ -29,6 +31,8 @@ const routes = [
     ProjectComponent,
     HomepageComponent,
     PersonalityComponent,
+    FooterComponent,
+    SkillComponent,
 
   ],
   imports: [

@@ -1,0 +1,9 @@
+.container div {
+    width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+    .container div {
+        width: 100%;
+    }
+}

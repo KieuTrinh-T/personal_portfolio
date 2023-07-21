@@ -43,17 +43,18 @@ li {
     font-weight: 300;
 }
 
-.container {
-    display: flex;
-    padding: 2%;
-}
-
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+}
+
+.container {
+    display: flex;
+    padding: 2%;
+    width: 100%;
 }
 
 .full-on-phone {
@@ -67,12 +68,20 @@ section {
 table td {
     padding: 1rem;
     border: 1px solid #ddd;
+    font-weight: 300;
 }
 
 table th {
     padding: 1rem;
     border: 1px solid #ddd;
     font-size: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
     font-weight: 300;
 }
 
