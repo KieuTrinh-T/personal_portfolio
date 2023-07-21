@@ -1,15 +1,6 @@
-h2 {
-    text-align: center;
-    margin: 20px;
-}
-
-.projects {
-    width: 60%;
-    margin: auto;
-}
-
-.projects mat-card {
-    margin: 20px;
+mat-card {
+    margin: 10px;
+    width: 100%;
 }
 
 .mat-card-content {
@@ -37,11 +28,6 @@ mat-card-content {
     justify-content: flex-start;
     align-items: flex-start;
     width: 70%;
-}
-
-mat-card-content p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 .zoom-in-out-box {
