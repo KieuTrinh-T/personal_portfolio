@@ -1,0 +1,69 @@
+<section class="margin-top">
+    <div class="full-on-phone">
+        <div>
+            <h1>Home credit Default Risk</h1>
+            <p><i>This is a brief overview of the project. For more detailed information, please refer to the full report at:
+                <a href="https://yphxk-my.sharepoint.com/:b:/g/personal/kieutrinh_yphxk_onmicrosoft_com/EfNqlYnCJm5IoEw3f6GGBXUB9OvTim31Uq1iU1fSWA6Yeg?e=iFa8Ze"
+                target="_blank">Link</a></i> </p>
+            <div>
+                <h2>Dataset</h2>
+                <p>Source: Home Credit Default Risk (from Kaggle)</p>
+                <p>The dataset includes 8 tables, the ERD of which is shown in the Figure 1</p>
+                <div class="image">
+                    <img src="assets\images\homecredit_ERD.svg" alt="ERD">
+                    <p class="caption">Figure 1: ERD of Home Credit Default Risk dataset</p>
+                </div>
+            </div>
+            <div>
+                <h2>
+                    Methodology
+                </h2>
+                <p>Carried out through steps shown in the Figure 2.
+                    <button class="zoom-in-out-box" mat-button (click)="ViewProcess()" [innerText]="visible ? 'Hide Details' : 'View Details'"><mat-icon>keyboard_arrow_right</mat-icon></button>
+                </p>
+                <ul [style.display]="visible ? 'block' : 'none'">The steps involved in carrying out this project are:
+                    <li>
+                        Understanding the business and identifying important issues related to financial loan risks.
+                    </li>
+                    <li>
+                        Performing exploratory data analysis (EDA) on the Home Credit dataset to preprocess the initial data. This helps in understanding the basic information about the Home Credit company and financial business, and identifies the issues that need to be addressed
+                        in the next step.
+                    </li>
+                    <li>
+                        Selecting important features from the dataset to predict financial loan risks and processing missing values. Transforming the data into a suitable form for applying machine learning methods and balancing data to ensure that the machine learning model
+                        is not biased due to the imbalance of data classes.
+                    </li>
+                    <li>
+                        Dividing the dataset into training and testing sets to evaluate the performance of the machine learning models. Using the Recursive Feature Elimination (RFE) method to select important features and building models using machine learning methods such as
+                        Logistic Regression, Random Forest, and XGBoost.
+                    </li>
+                    <li>
+                        Evaluating the performance of the models using evaluation metrics such as confusion matrix and AUC. Selecting the machine learning model with the best performance and using it to select the important features that affect that machine learning method.
+                    </li>
+                    <li>
+                        Predicting the application test set to provide predictions for financial loan risk profiles.
+                    </li>
+
+                </ul>
+                <div class="image">
+                    <img src="assets\images\defaultRiskProcess.svg" alt="Process">
+                    <p class="caption">Figure 2: Research Process</p>
+                </div>
+            </div>
+            <div>
+                <h2>Result</h2>
+                <p>The XGBoost model gives the best result with both F1-score and Accuracy of 0.93</p>
+                <div class="image">
+                    <img src="assets\images\defaultRiskResult.png" alt="result" />
+                    <p class="caption">Figure 3: Results of 3 models</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+</section>

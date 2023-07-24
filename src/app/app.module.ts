@@ -16,6 +16,7 @@ import { PersonalityComponent } from './personality/personality.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillComponent } from './skill/skill.component';
 
+
 const routes = [
   { path: '', component: HomepageComponent },
   { path: 'about-me', component: AboutMeComponent },

@@ -1,4 +1,4 @@
-<section>
+<section id="projects">
     <h2>
         Projects
     </h2>
@@ -42,17 +42,49 @@
                     <img src="https://cdn.dribbble.com/users/869811/screenshots/9978997/google-maps-redesign_4x.png" alt="google-maps">
                 </div>
                 <mat-card-content>
-                    <p>
-                        Scrape reviews from Google Maps; Preprocessing;
-                    </p>
-                    <p>
-                        Labeling with VADER and TextBlob and Sentiment classification with LSTM and SVM
-                    </p>
+                    <ul>
+                        <li>Collect reviews from Google Maps</li>
+                        <li>Preprocess data</li>
+                        <li>EDA</li>
+                        <li>Build models to predict sentiment of reviews</li>
+                    </ul>
                     <p>
                         <b>Tools used:</b> Selenium, VADER, TextBlob, LSTM, SVM
                     </p>
                     <a class="zoom-in-out-box" mat-button href="https://github.com/KieuTrinh-T/Restaurant-review-Sentiment-Analysis" target="_blank">
                     View report<mat-icon>keyboard_arrow_right</mat-icon></a>
+                </mat-card-content>
+            </div>
+        </mat-card>
+
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title>School Project: Default Risk</mat-card-title>
+                    <mat-card-subtitle>Jun, 2023</mat-card-subtitle>
+                </mat-card-title-group>
+            </mat-card-header>
+            <div class="mat-card-content">
+                <div class="mat-card-content-img">
+                    <img src="assets\images\homecredit.png" alt="cosmetic">
+                </div>
+                <mat-card-content>
+                    <p>
+                        In this project, we aimed to predict whether a customer will default on a loan or not.
+                    </p>
+                    <p>
+                        <b>Project size:</b> 4 weeks with 4 members
+                    </p>
+                    <ul><b>My duties: </b>
+                        <li>Preprocessing data, feature engineering, feature selection</li>
+                        <li>Modeling</li>
+                    </ul>
+                    <p>
+                        <b>Tools used: </b>Python
+                    </p>
+                    <p>Report: <a href="https://yphxk-my.sharepoint.com/:b:/g/personal/kieutrinh_yphxk_onmicrosoft_com/EfNqlYnCJm5IoEw3f6GGBXUB9OvTim31Uq1iU1fSWA6Yeg?e=fFw0a3" target="_blank">Link</a></p>
+                    <button class="zoom-in-out-box" mat-button routerLink="projects/homecredit">View details<mat-icon>keyboard_arrow_right</mat-icon></button>
                 </mat-card-content>
             </div>
         </mat-card>
@@ -90,6 +122,7 @@
                 </mat-card-content>
             </div>
         </mat-card>
+
 
 
 

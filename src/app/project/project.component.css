@@ -51,3 +51,9 @@ mat-card-content {
     background-color: black;
     color: white;
 }
+
+mat-card {
+    /* border: black 0.2px solid; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
