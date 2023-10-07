@@ -1,46 +1,38 @@
-<section id="projects">
-    <h2>
-        Projects
-    </h2>
-    <div class="full-on-phone">
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title-group>
-                    <mat-card-title>Customer Segment with RFM</mat-card-title>
-                    <mat-card-subtitle>Jul, 2023</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <div class="mat-card-content">
-                <div class="mat-card-content-img">
-                    <img src="assets\images\rfm.png" alt="rfm">
-                </div>
+<section class="text-dark mb-0" id="project" style="padding-top: 5%;padding-bottom: 5%;">
+    <div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 class="text-uppercase text-center text-black">My projects</h2>
+                <p class="w-lg-50">My school and personal projects</p>
+            </div>
+        </div>
+        <div class="container col-9">
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>Customer Segment with RFM</mat-card-title>
+                        <mat-card-subtitle>Jul, 2023</mat-card-subtitle>
+                        <img mat-card-md-image src="assets/img/rfm.png" alt="rfm">
+                    </mat-card-title-group>
+                </mat-card-header>
                 <mat-card-content>
                     <p>
-                        I used RFM to segment customers into 4 groups: Loyal, Popular, Frequency, and Need Attention..
+                        I used RFM to segment customers into 4 groups: Loyal, Popular, Frequency, and Need Attention. Then, visualize the result with Power BI and analyze the demographic characteristics.
                     </p>
                     <p>
-                        Then, visualize the result with Power BI and analyze the demographic characteristics.
+                        <strong>Tools used:</strong> Power BI, SQL
                     </p>
-                    <p class="tools">
-                        <b>Tool:</b> Power BI.
-                    </p>
-                    <button class="zoom-in-out-box" mat-button routerLink="projects/rfm-customer">View details<mat-icon>keyboard_arrow_right</mat-icon></button>
                 </mat-card-content>
-            </div>
-
-        </mat-card>
-
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title-group>
-                    <mat-card-title>Personal project: Sentiment Analysis for restaurant reviews</mat-card-title>
-                    <mat-card-subtitle>Jun, 2023</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <div class="mat-card-content">
-                <div class="mat-card-content-img">
-                    <img src="https://cdn.dribbble.com/users/869811/screenshots/9978997/google-maps-redesign_4x.png" alt="google-maps">
-                </div>
+            </mat-card>
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>Personal project: Sentiment Analysis for restaurant reviews</mat-card-title>
+                        <mat-card-subtitle>Jul, 2023</mat-card-subtitle>
+                        <img mat-card-md-image src="data:image/png;base64,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"
+                            alt="googlemap">
+                    </mat-card-title-group>
+                </mat-card-header>
                 <mat-card-content>
                     <ul>
                         <li>Collect reviews from Google Maps</li>
@@ -49,83 +41,192 @@
                         <li>Build models to predict sentiment of reviews</li>
                     </ul>
                     <p>
-                        <b>Tools used:</b> Selenium, VADER, TextBlob, LSTM, SVM
+                        <strong>Tools used:</strong> Selenium, VADER, TextBlob, LSTM, SVM
                     </p>
-                    <a class="zoom-in-out-box" mat-button href="https://github.com/KieuTrinh-T/Restaurant-review-Sentiment-Analysis" target="_blank">
-                    View report<mat-icon>keyboard_arrow_right</mat-icon></a>
                 </mat-card-content>
-            </div>
-        </mat-card>
-
-
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title-group>
-                    <mat-card-title>School Project: Default Risk</mat-card-title>
-                    <mat-card-subtitle>Jun, 2023</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <div class="mat-card-content">
-                <div class="mat-card-content-img">
-                    <img src="assets\images\homecredit.png" alt="cosmetic">
-                </div>
+            </mat-card>
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>School Project: Default Risk</mat-card-title>
+                        <mat-card-subtitle>Jun, 2023</mat-card-subtitle>
+                        <img mat-card-md-image src="assets/img/homecredit.png" alt="homecredit">
+                    </mat-card-title-group>
+                </mat-card-header>
                 <mat-card-content>
-                    <p>
-                        In this project, we aimed to predict whether a customer will default on a loan or not.
-                    </p>
-                    <p>
-                        <b>Project size:</b> 4 weeks with 4 members
-                    </p>
-                    <ul><b>My duties: </b>
-                        <li>Preprocessing data, feature engineering, feature selection</li>
-                        <li>Modeling</li>
+                    <p><strong>Aim:</strong> To predict whether a customer will default on a loan or not.</p>
+                    <p><strong>Project size:</strong> 4 weeks with 4 members</p>
+                    <p><strong>My duties:</strong></p>
+                    <ul>
+                        <li>Preprocessing data</li>
+                        <li>Feature Selection</li>
                     </ul>
-                    <p>
-                        <b>Tools used: </b>Python
-                    </p>
-                    <p>Report: <a href="https://yphxk-my.sharepoint.com/:b:/g/personal/kieutrinh_yphxk_onmicrosoft_com/EfNqlYnCJm5IoEw3f6GGBXUB9OvTim31Uq1iU1fSWA6Yeg?e=fFw0a3" target="_blank">Link</a></p>
-                    <button class="zoom-in-out-box" mat-button routerLink="projects/homecredit">View details<mat-icon>keyboard_arrow_right</mat-icon></button>
+                    <p><strong>Tools used:</strong> Python</p>
                 </mat-card-content>
-            </div>
-        </mat-card>
-
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title-group>
-                    <mat-card-title>School Project: Cosmetic website</mat-card-title>
-                    <mat-card-subtitle>May, 2023</mat-card-subtitle>
-                </mat-card-title-group>
-            </mat-card-header>
-            <div class="mat-card-content">
-                <div class="mat-card-content-img">
-                    <img src="assets\images\freshie.png" alt="cosmetic">
-                </div>
+            </mat-card>
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>School Project: Cosmetic website</mat-card-title>
+                        <mat-card-subtitle>May, 2023</mat-card-subtitle>
+                        <img mat-card-md-image src="assets/img/freshie.png" alt="freshie">
+                    </mat-card-title-group>
+                </mat-card-header>
                 <mat-card-content>
-                    <p>
-                        This project is to build a website with Angular framework, developed from the last web project.
-                    </p>
-                    <p>
-                        <b>Project size:</b> 2 weeks with 2 members
-                    </p>
-                    <ul><b>My duties: </b>
-                        <li>Create sample product data and create database on MongoDB;
-                        </li>
-                        <li>Build up web server connecting to database to query, insert, update data and return API</li>
-                        <li>
-                            Be responsible for admin page, whose functions include: load and show products/ order; manage orders,...
-                        </li>
+                    <p><strong>Description</strong>: This project is to build a website with Angular framework, developed from the last web project.</p>
+                    <p><strong>Project size</strong>: 2 weeks with 2 members</p>
+                    <p><strong>My duties:</strong></p>
+                    <ul>
+                        <li>Create sample product data and create database on MongoDB;</li>
+                        <li>Build a web server with database connectivity, supporting querying, data insertion, updates, and API response.</li>
+                        <li>Be responsible for admin page, whose functions include: load and show products/ order; manage orders,...</li>
                     </ul>
-                    <p>
-                        <b>Tools used:</b> Angular, NodeJS, ExpressJS, MongoDB
-                    </p>
-                    <p>Visit website: <a href="https://www.freshie.live/" target="_blank">https://www.freshie.live/</a></p>
+                    <p><strong>Tools used:</strong> Angular, NodeJS, ExpressJS, MongoDB</p>
                 </mat-card-content>
+            </mat-card>
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>Sentiment Analysis for Hotel reviews using LSTM and distilBERT</mat-card-title>
+                        <mat-card-subtitle>Mar, 2023</mat-card-subtitle>
+                        <img mat-card-md-image src="data:image/png;base64,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"
+                            alt="TripAdvisor">
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content>
+                    <p><strong>Input:</strong> Reviews crawled from TripAdvisor</p>
+                    <p><strong>Output:</strong> Polarity (Positive, Neutral, or Negative)</p>
+                    <p><strong>Result:</strong> DistilBert Model gave the highest F1-score at 0.91</p>
+                    <p><strong>Project size:</strong> 2 weeks with 5 members</p>
+                    <p><strong><span style="color: rgb(0, 0, 0);">My duties:</span></strong></p>
+                    <ul>
+                        <li>Pre-processing: lowercase; remove stopwords, punctuation; lemmatize</li>
+                        <li>Modeling: LSTM with imbalanced and under-sampled data; distilBert</li>
+                        <li>Deploy through Flask</li>
+                    </ul>
+                    <p><strong>Tools used:</strong> Python (Tensor Flow, Keras), Flask</p>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card-item">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>Stock price prediction using Kafka and Machine Learning</mat-card-title>
+                        <mat-card-subtitle>Dec, 2022</mat-card-subtitle>
+                        <img mat-card-md-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxKv9A3YW9g1fET8yZ7VWpEq_agAqdkioUUXfKH48hWXV-SBur9AaK83TmdXjFfY79dE&amp;usqp=CAU" alt="stock">
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content>
+                    <p><strong>Input:</strong> Stock price data crawled from Yahoo Finance</p>
+                    <p><strong>Output:</strong> Predicted stock price</p>
+                    <p><strong>Result:</strong> LSTM Model gave the highest F1-score at 0.91</p>
+                    <p><strong>Project size:</strong> 2 weeks with 5 members</p>
+                    <p><strong><span style="color: rgb(0, 0, 0);">My duties:</span></strong></p>
+                    <ul>
+                        <li>Pre-processing: lowercase; remove stopwords, punctuation; lemmatize</li>
+                        <li>Modeling: LSTM with imbalanced and under-sampled data; distilBert</li>
+                        <li>Deploy through Flask</li>
+                    </ul>
+                    <p><strong>Tools used:</strong> Python (Tensor Flow, Keras), Flask</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <!-- <div>
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="object-fit: contain" src="assets/img/rfm.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><span style="color: rgb(0, 0, 0);">Customer Segment with RFM</span></h4>
+                        <p class="created-time">Jul, 2023</p>
+                        <p><span style="color: rgb(0, 0, 0);">I used RFM to segment customers into 4 groups: Loyal, Popular, Frequency, and Need Attention..</span></p>
+                        <p><span style="color: rgb(0, 0, 0);">Then, visualize the result with Power BI and analyze the demographic characteristics.</span></p>
+                        <p><strong><span style="color: rgb(0, 0, 0); background-color: var(--mdc-elevated-card-container-color, transparent);">Tools used:</span></strong><span style="color: rgb(0, 0, 0); background-color: var(--mdc-elevated-card-container-color, transparent);">&nbsp;Power BI, SQL</span></p>
+                    </div>
+                </div>
             </div>
-        </mat-card>
-
-
-
-
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.dribbble.com/users/869811/screenshots/9978997/google-maps-redesign_4x.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><span style="color: rgb(0, 0, 0);">Personal project: Sentiment Analysis for restaurant reviews</span></h4>
+                        <p class="created-time">Jul, 2023</p>
+                        <ul>
+                            <li><span style="color: rgb(0, 0, 0);">Collect reviews from Google Maps</span></li>
+                            <li><span style="color: rgb(0, 0, 0);">Preprocess data</span></li>
+                            <li><span style="color: rgb(0, 0, 0);">EDA</span></li>
+                            <li><span style="color: rgb(0, 0, 0);">Build models to predict sentiment of reviews</span></li>
+                        </ul>
+                        <p><span style="color: rgb(0, 0, 0);">&nbsp;</span><strong><span style="color: rgb(0, 0, 0);">Tools used:</span></strong><span style="color: rgb(0, 0, 0);">&nbsp;Selenium, VADER, TextBlob, LSTM, SVM</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block" style="object-fit: contain" src="assets/img/homecredit.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><span style="color: rgb(0, 0, 0);">School Project: Default Risk</span></h4>
+                        <p class="created-time">Jun, 2023</p>
+                        <p><strong>Aim:</strong> T<span style="color: rgb(0, 0, 0);">o predict whether a customer will default on a loan or not.</span></p>
+                        <p><strong><span style="color: rgb(0, 0, 0);">Project size:</span></strong><span style="color: rgb(0, 0, 0);">&nbsp;4 weeks with 4 members</span></p>
+                        <p><strong><span style="color: rgb(0, 0, 0);">My duties:</span></strong></p>
+                        <ul>
+                            <li><span style="color: rgb(0, 0, 0);">Preprocessing data</span></li>
+                            <li><span style="color: rgb(0, 0, 0);">Feature Selection</span></li>
+                        </ul>
+                        <p><strong><span style="color: rgb(0, 0, 0);">Tools used:&nbsp;</span></strong><span style="color: rgb(0, 0, 0);">Python</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block" style="object-fit: contain" src="assets/img/freshie.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><span style="color: rgb(0, 0, 0);">School Project: Cosmetic website</span></h4>
+                        <p class="created-time">May, 2023</p>
+                        <p><strong><span style="color: rgb(0, 0, 0);">Description</span></strong><span style="color: rgb(0, 0, 0);">: This project is to build a website with Angular framework, developed from the last web project.</span></p>
+                        <p><strong>Project size</strong>: 2 weeks with 2 members</p>
+                        <p><strong><span style="color: rgb(0, 0, 0);">My duties:</span></strong></p>
+                        <ul>
+                            <li><span style="color: rgb(0, 0, 0);">Create sample product data and create database on MongoDB;</span></li>
+                            <li>Build a&nbsp; web server with database connectivity, supporting querying, data insertion, updates, and API response.</li>
+                            <li>Be responsible for admin page, whose functions include: load and show products/ order; manage orders,...</li>
+                        </ul>
+                        <p><strong>Tools used:</strong> Angular, NodeJS, ExpressJS, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block" style="object-fit: contain" src="data:image/png;base64,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"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><strong><span style="color: rgb(0, 0, 0);">Sentiment Analysis for Hotel reviews using LSTM and distilBERT</span></strong></h4>
+                        <p><strong>Input:</strong> Reviews crawled from TripAdvisor</p>
+                        <p><strong>Output:</strong> Polarity (Positive, Neutral, or Negative)</p>
+                        <p><strong>Result:</strong> DistilBert Model gave the highest F1-score at 0.91</p>
+                        <p><strong>Project size:</strong> 2 weeks with 5 members</p>
+                        <p><strong><span style="color: rgb(0, 0, 0);">My duties:</span></strong></p>
+                        <ul>
+                            <li>Pre-processing: lowercase; remove stopwords, punctuation; lemmatize</li>
+                            <li>Modeling: LSTM with imbalanced and under-sampled data; distilBert</li>
+                            <li>Deploy through Flask</li>
+                        </ul>
+                        <p><strong>Tools used:</strong> Python (Tensor Flow, Keras), Flask</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxKv9A3YW9g1fET8yZ7VWpEq_agAqdkioUUXfKH48hWXV-SBur9AaK83TmdXjFfY79dE&amp;usqp=CAU" style="object-fit: contain;width: 100%;"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4>School Project: Stock price prediction using Kafka and Machine Learning</h4>
+                        <p><strong>Input: </strong>Stock price dataset of Apple Inc., real-time stock price&nbsp;</p>
+                        <p><strong>Output:</strong> predicted price</p>
+                        <p><strong>Result:</strong> DistilBert Model gave the highest F1-score at 0.91</p>
+                        <p><strong>Project size:</strong>&nbsp;1weeks with 1 member</p>
+                        <p><strong>Describe:</strong> Train model, request stock price from Alpha Vantage, visualize predict result on web platform.</p>
+                        <p><strong>Tools used:</strong>&nbsp;<span style="color: rgb(0, 0, 0);">PySpark, Apache Kafka, Flask, Alpha Vantage, Linear Regression</span></p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
-
 </section>

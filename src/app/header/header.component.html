@@ -1,23 +1,14 @@
 <header>
-    <div class="header__logo">
-        <a routerLink="/"><img src="assets\images\LOGO_HOR.png" alt="logo" /></a>
-    </div>
-    <div class="header__nav">
-        <div>
-            <!-- Move to home page and focus on section with id about-me -->
-            <a href="/#about-me">
-                <button mat-flat-button color="primary">About me</button>
-            </a>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark text-uppercase navbar-light" id="mainNav" style="background: var(--bs-secondary);color: var(--bs-primary-bg-subtle)">
+        <div class="container-fluid"><a class="navbar-brand" href="#page-top" style="margin: 0px 0px 0px 30px;color: var(--bs-primary-border-subtle);">Kieu Trinh</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#project">Projects</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <a href="/#projects">
-                <button mat-flat-button color="primary">Projects</button>
-            </a>
-        </div>
-        <div>
-            <a href="/#contact">
-                <button mat-flat-button color="primary">Contact</button>
-            </a>
-        </div>
-    </div>
+    </nav>
 </header>
