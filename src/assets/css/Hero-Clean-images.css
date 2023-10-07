@@ -1,10 +1,17 @@
 .fit-cover {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .created-time {
-  color: var(--bs-light-text-emphasis);
-  font-style: italic;
-  text-align: end;
+    color: var(--bs-light-text-emphasis);
+    font-style: italic;
+    text-align: end;
 }
 
+.btn-social {
+    background: linear-gradient(rgba(138, 208, 251, 0.325), rgba(252, 148, 247, 0.237));
+}
+
+.btn-social:hover {
+    background: var(--bs-link-color);
+}

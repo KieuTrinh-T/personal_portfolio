@@ -1,0 +1,179 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate3d(0);
+    }
+    to {
+        transform: rotate3d(10 20 30);
+    }
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20%);
+    }
+}
+
+@keyframes move-up-2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10rem);
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5rem);
+    }
+}
+
+@keyframes hue-shift {
+    from {
+        filter: hue-rotate(0);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 75%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    30% {
+        border-color: var(--bs-info);
+    }
+}
+
+.transparent-div {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.301), rgba(251, 237, 255, 0.449));
+    animation-duration: 1.25s;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.welcome {
+    background: linear-gradient(var(--bs-primary-border-subtle), white);
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+
+.welcome h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 10% auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 5s steps(19, end), blink-caret .75s step-end infinite;
+}
+
+.welcome::before {
+    background-image: url("assets/img/bg-space.png");
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+    animation: scale 3s infinite alternate;
+}
+
+.mat-mini-fab.btn-contact {
+    background-color: black;
+    fill: black;
+}
+
+.mat-mdc-fab,
+.mat-mdc-mini-fab {
+    background-color: black;
+}
+
+.card-item {
+    margin-top: auto;
+}
+
+.blob {
+    object-fit: contain;
+    position: absolute;
+}
+
+.blob.scube {
+    width: 20%;
+    z-index: 2;
+    opacity: 0.8;
+    transform: translateX(-50%), translateY(30%);
+    animation-name: rotate, move-up, hue-shift;
+    animation-duration: 10s, 5s, 15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.blob.sphere {
+    width: 5%;
+    z-index: 3;
+    top: 40%;
+    left: 70%;
+    animation-name: move-up-2, hue-shift;
+    animation-duration: 4s, 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.blob.sphere-2 {
+    width: 3%;
+    z-index: 1;
+    top: 30%;
+    left: 90%;
+    opacity: 0.7;
+    animation-name: move-down, hue-shift;
+    animation-duration: 2s, 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}

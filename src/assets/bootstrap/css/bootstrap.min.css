@@ -12901,11 +12901,11 @@ section .h2 {
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-    color: #fff
+    color: var(--bs-info);
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: var(--bs-primary-border-subtle);
+    color: var(--bs-info);
 }
 
 #mainNav .navbar-toggler {
@@ -12927,7 +12927,7 @@ section .h2 {
         margin-top: 0
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
-        color: var(--bs-primary-border-subtle);
+        color: var(--bs-info);
         /* scale*/
         transform: scaleX(1.2);
         /* background: #ea868f */
@@ -12947,35 +12947,35 @@ section .h2 {
     }
 }
 
-header.masthead {
+.masthead {
     padding-top: calc(6rem + 72px);
     padding-bottom: 6rem
 }
 
-header.masthead h1,
-header.masthead .h1 {
+.masthead h1,
+.masthead .h1 {
     font-size: 3rem;
     line-height: 3rem
 }
 
-header.masthead h2,
-header.masthead .h2 {
+.masthead h2,
+.masthead .h2 {
     font-size: 1.3rem;
     font-family: "Lato"
 }
 
 @media(min-width: 992px) {
-    header.masthead {
+    .masthead {
         padding-top: calc(6rem + 106px);
         padding-bottom: 6rem
     }
-    header.masthead h1,
-    header.masthead .h1 {
+    .masthead h1,
+    .masthead .h1 {
         font-size: 4.75em;
         line-height: 4rem
     }
-    header.masthead h2,
-    header.masthead .h2 {
+    .masthead h2,
+    .masthead .h2 {
         font-size: 1.75em
     }
 }
