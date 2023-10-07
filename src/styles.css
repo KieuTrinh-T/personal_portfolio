@@ -104,9 +104,13 @@
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    margin: 10% auto;
+    margin: 3rem auto 2rem auto;
     /* Gives that scrolling effect as the typing happens */
     animation: typing 5s steps(19, end), blink-caret .75s step-end infinite;
+}
+
+.welcome p {
+    margin-bottom: 3rem;
 }
 
 .welcome::before {
