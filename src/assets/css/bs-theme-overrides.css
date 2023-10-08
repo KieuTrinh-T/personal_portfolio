@@ -10,6 +10,7 @@
     --bs-secondary-text-emphasis: #070B18;
     --bs-secondary-bg-subtle: #D0D1D8;
     --bs-secondary-border-subtle: #A0A4B1;
+    --bs-tertiary-bg-rgb: var(--bs-primary-rgb);
     --bs-success: #FF6969;
     --bs-success-rgb: 255, 105, 105;
     --bs-success-text-emphasis: #662A2A;
@@ -24,6 +25,7 @@
     --bs-link-color-rgb: 253, 240, 240;
     --bs-link-hover-color: #f1b4bb;
     --bs-link-hover-color-rgb: 241, 180, 187;
+    --step: 53;
 }
 
 .btn-primary {

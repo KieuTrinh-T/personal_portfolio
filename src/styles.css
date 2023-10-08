@@ -10,10 +10,10 @@
 
 @keyframes rotate {
     from {
-        transform: rotate3d(0);
+        transform: rotateX(0)
     }
     to {
-        transform: rotate3d(10 20 30);
+        transform: rotateX(60deg)
     }
 }
 
@@ -37,10 +37,10 @@
 
 @keyframes move-down {
     from {
-        transform: translateY(0);
+        transform: translateY(1rem);
     }
     to {
-        transform: translateY(-5rem);
+        transform: translateY(-13rem);
     }
 }
 
@@ -78,6 +78,12 @@
     }
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .transparent-div {
     background-image: linear-gradient(rgba(255, 255, 255, 0.301), rgba(251, 237, 255, 0.449));
     animation-duration: 1.25s;
@@ -87,7 +93,7 @@
 }
 
 .welcome {
-    background: linear-gradient(var(--bs-primary-border-subtle), white);
+    background: linear-gradient(var(--bs-success-border-subtle), white);
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -104,7 +110,7 @@
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    margin: 3rem auto 2rem auto;
+    margin: 2rem auto 2rem auto;
     /* Gives that scrolling effect as the typing happens */
     animation: typing 5s steps(19, end), blink-caret .75s step-end infinite;
 }
@@ -127,6 +133,44 @@
     animation: scale 3s infinite alternate;
 }
 
+@keyframes t {
+    from {
+        background-size: 0 200%;
+    }
+}
+
+@keyframes b {
+    50% {
+        background-position: 0 -100%, 0 0
+    }
+}
+
+.type {
+    font-family: monospace;
+    color: #0000;
+    background: linear-gradient(to left, var(--bs-info), var(--bs-secondary));
+    background-size: 80ch 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-animation: t 16s steps(80) infinite;
+    animation: t 5s steps(80) infinite;
+}
+
+.flex-auto {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+    ul:has(.list-inline-item) {
+        flex-direction: row;
+    }
+}
+
 .mat-mini-fab.btn-contact {
     background-color: black;
     fill: black;
@@ -146,13 +190,13 @@
     position: absolute;
 }
 
-.blob.scube {
+.blob.cube {
     width: 20%;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.9;
     transform: translateX(-50%), translateY(30%);
-    animation-name: rotate, move-up, hue-shift;
-    animation-duration: 10s, 5s, 15s;
+    animation-name: move-up, hue-shift;
+    animation-duration: 5s, 15s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -180,4 +224,31 @@
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-delay: 1s;
+}
+
+.blob.gradient {
+    width: 20%;
+    z-index: -1;
+    top: 50%;
+    left: 0%;
+    opacity: 0.8;
+    transform: translateX(-40%), rotateX(90);
+    animation-name: hue-shift, pulse;
+    animation-duration: 20s, 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.blob.cube-2 {
+    width: 10%;
+    z-index: 1;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%), translateY(30%), rotateY(90deg);
+    animation-name: move-up, hue-shift;
+    animation-duration: 10s, 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }

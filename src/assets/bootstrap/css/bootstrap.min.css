@@ -9591,7 +9591,7 @@ fieldset:disabled .btn {
 }
 
 .bg-opacity-75 {
-    --bs-bg-opacity: 0.75
+    --bs-bg-opacity: 0.75 !important
 }
 
 .bg-opacity-100 {
