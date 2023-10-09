@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
 import { ProjectComponent } from './project/project.component';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
@@ -15,6 +16,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { PersonalityComponent } from './personality/personality.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillComponent } from './skill/skill.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes = [
@@ -42,7 +44,9 @@ const routes = [
     MatCardModule,
     RouterModule.forRoot(routes),
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule,
+    HttpClientModule
 
   ],
   providers: [],

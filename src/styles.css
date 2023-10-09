@@ -8,6 +8,24 @@
     }
 }
 
+@keyframes blue-move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20%) translateY(10%);
+    }
+}
+
+@keyframes pink-move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-20%) translateY(-10%);
+    }
+}
+
 @keyframes rotateX {
     from {
         transform: rotateX(0) translateY(-7rem) translateX(-3rem);
@@ -282,6 +300,74 @@
     right: 5rem;
     z-index: 20;
     animation: rotateY 7s infinite alternate;
+}
+
+
+/*-------------------ABOUT ME------------------*/
+
+#about {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    align-items: center;
+}
+
+#about::before {
+    background-image: url("assets/img/bg-pat.png");
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+
+/*-----------------PROJECT----------------------------*/
+
+#project {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    align-items: center;
+}
+
+.blob.blur-pink {
+    width: 200%;
+    z-index: -5;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0.3;
+    animation-name: hue-shift, pink-move;
+    animation-duration: 20s, 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.blob.blur-blue {
+    width: 150%;
+    z-index: -4;
+    top: 5%;
+    right: 0%;
+    opacity: 0.3;
+    animation-name: move-up-2, blue-move;
+    animation-duration: 5s, 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+mat-card {
+    background-color: #eacdcd1e;
 }
 
 mat-card-actions {

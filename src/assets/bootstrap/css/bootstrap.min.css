@@ -12768,7 +12768,7 @@ fieldset:disabled .btn {
 }
 
 body {
-    font-family: "Lato"
+    font-family: var(--mdc-typography-headline6-font-family, var(--mdc-typography-font-family, Roboto, sans-serif))
 }
 
 h1,

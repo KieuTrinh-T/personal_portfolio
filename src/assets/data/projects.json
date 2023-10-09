@@ -1,0 +1,211 @@
+[{
+        "title": "Customer Segment with RFM",
+        "subtitle": "Jul, 2023",
+        "label": "Data Analytics",
+        "image": "assets/img/rfm.png",
+        "content": [{
+                "section": "Project Details",
+                "text": "I used RFM to segment customers into 4 groups: Loyal, Popular, Frequency, and Need Attention. Then, visualize the result with Power BI and analyze the demographic characteristics."
+            },
+            {
+                "section": "Tools Used",
+                "text": "Power BI, SQL"
+            }
+        ],
+        "actions": [{
+            "label": "View details",
+            "link": "projects/rfm-customer"
+        }]
+    },
+    {
+        "title": "Personal project: Sentiment Analysis for restaurant reviews",
+        "subtitle": "Jul, 2023",
+        "label": "Data Analytics",
+        "image": "assets/img/map.png",
+        "content": [{
+                "section": "Steps",
+                "text": "Collect reviews from Google Maps"
+            },
+            {
+                "section": "Preprocessing",
+                "text": "Preprocess data"
+            },
+            {
+                "section": "Exploratory Data Analysis",
+                "text": "EDA"
+            },
+            {
+                "section": "Model Building",
+                "text": "Build models to predict sentiment of reviews"
+            },
+            {
+                "section": "Tools Used",
+                "text": "Selenium, VADER, TextBlob, LSTM, SVM"
+            }
+        ]
+    },
+    {
+        "title": "School Project: Default Risk",
+        "subtitle": "Jun, 2023",
+        "label": "Data Analytics",
+        "image": "assets/img/homecredit.png",
+        "content": [{
+                "section": "Aim",
+                "text": "To predict whether a customer will default on a loan or not."
+            },
+            {
+                "section": "Project Size",
+                "text": "4 weeks with 4 members"
+            },
+            {
+                "section": "My Duties",
+                "text": "Preprocessing data<br>Feature Selection"
+            },
+            {
+                "section": "Tools Used",
+                "text": "Python"
+            }
+        ]
+    },
+    {
+        "title": "School Project: Cosmetic website",
+        "subtitle": "May, 2023",
+        "label": "Web Development",
+        "image": "assets/img/freshie.png",
+        "content": [{
+                "section": "Description",
+                "text": "This project is to build a website with Angular framework, developed from the last web project."
+            },
+            {
+                "section": "Project Size",
+                "text": "2 weeks with 2 members"
+            },
+            {
+                "section": "My Duties",
+                "text": "Create sample product data and create database on MongoDB <br> Build a web server with database connectivity, supporting querying, data insertion, updates, and API response.<br>Be responsible for admin page, whose functions include: load and show products/ order; manage orders,..."
+            },
+            {
+                "section": "Tools Used",
+                "text": "Angular, NodeJS, ExpressJS, MongoDB"
+            }
+        ],
+        "actions": [{
+                "label": "View website",
+                "link": "https://www.freshie.live/"
+            },
+            {
+                "label": "View code",
+                "link": "https://github.com/KieuTrinh-T/freshie-project"
+            }
+        ]
+    },
+    {
+        "title": "Sentiment Analysis for Hotel reviews using LSTM and distilBERT",
+        "subtitle": "Mar, 2023",
+        "label": "Data Analytics",
+        "image": "assets/img/tripAdvisor.jpg",
+        "content": [{
+                "section": "Input",
+                "text": "Reviews crawled from TripAdvisor"
+            },
+            {
+                "section": "Output",
+                "text": "Polarity (Positive, Neutral, or Negative)"
+            },
+            {
+                "section": "Result",
+                "text": "DistilBert Model gave the highest F1-score at 0.91"
+            },
+            {
+                "section": "Project Size",
+                "text": "2 weeks with 5 members"
+            },
+            {
+                "section": "My Duties",
+                "text": "Pre-processing: lowercase; remove stopwords, punctuation; lemmatize<br>Modeling: LSTM with imbalanced and under-sampled data; distilBert<br>Deploy through Flask"
+            },
+            {
+                "section": "Tools Used",
+                "text": "Python (Tensor Flow, Keras), Flask"
+            }
+        ]
+    },
+    {
+        "title": "Stock price prediction using Kafka and Machine Learning",
+        "subtitle": "Dec, 2022",
+        "label": "Data Analytics",
+        "image": "assets/img/apple.jpg",
+        "content": [{
+                "section": "Input",
+                "text": "Stock price data crawled from Yahoo Finance"
+            },
+            {
+                "section": "Output",
+                "text": "Predicted stock price"
+            },
+            {
+                "section": "Result",
+                "text": "LSTM Model gave the highest F1-score at 0.91"
+            },
+            {
+                "section": "Project Size",
+                "text": "2 weeks with 5 members"
+            },
+            {
+                "section": "My Duties",
+                "text": "Pre-processing: lowercase; remove stopwords, punctuation; lemmatize<br>Modeling: LSTM with imbalanced and under-sampled data; distilBert<br>Deploy through Flask"
+            },
+            {
+                "section": "Tools Used",
+                "text": "Python (Tensor Flow, Keras), Flask"
+            }
+        ]
+    },
+    {
+        "title": "School Project: Cosmetic Mobile App",
+        "subtitle": "Dec, 2022",
+        "label": "Mobile Development",
+        "image": "assets/img/freshie.png",
+        "content": [{
+                "section": "Description",
+                "text": "Design and Develop a Mobile App with common processes as Search, Order, and View Product details, etc."
+            },
+            {
+                "section": "Project Size",
+                "text": "2 weeks with 5 members"
+            },
+            {
+                "section": "My Duties",
+                "text": "Analyze and Draw Use case, BPMN, ERD diagrams, and Sitemap <br>Create sample database, DatabaseHelper; responsible for order, product filter, login/sign up functions"
+            },
+            {
+                "section": "Tools Used",
+                "text": "Java (Android), Flutter, SQLite"
+            }
+        ],
+        "actions": [{
+            "label": "View code",
+            "link": "github.com/KieuTrinh-T/AndroidAppProject"
+        }]
+    },
+    {
+        "title": "My portfolio website",
+        "subtitle": "Jul, 2023",
+        "label": "Web Development",
+        "image": "assets/images/LOGO.png",
+        "content": [{
+                "section": "Description",
+                "text": "This is my portfolio website, which is built with Angular framework."
+            },
+            {
+                "section": "Tools Used",
+                "text": "Angular, Bootstrap, HTML, CSS, JavaScript"
+            }
+        ],
+        "actions": [{
+            "label": "View code",
+            "link": "https://github.com/KieuTrinh-T/personal_portfolio"
+
+        }]
+    }
+]
