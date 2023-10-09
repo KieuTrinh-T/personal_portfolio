@@ -13,7 +13,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(40%) translateY(50%);
+        transform: translateX(40%) translateY(100%);
     }
 }
 
@@ -22,7 +22,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-30%) translateY(70%);
+        transform: translateX(-30%) translateY(100%);
     }
 }
 
@@ -341,26 +341,26 @@
 }
 
 .blob.blur-pink {
-    width: 200%;
-    z-index: -5;
+    width: 300%;
+    z-index: -100;
     bottom: 40%;
     left: 20%;
     opacity: 0.3;
     animation-name: hue-shift, pink-move;
-    animation-duration: 20s, 10s;
+    animation-duration: 20s, 15s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-delay: 1s;
 }
 
 .blob.blur-blue {
-    width: 300%;
-    z-index: -4;
+    width: 500%;
+    z-index: -105;
     bottom: 30%;
     right: 20%;
     opacity: 0.3;
     animation-name: hue-shift, blue-move;
-    animation-duration: 5s, 10s;
+    animation-duration: 5s, 20s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-delay: 1s;
