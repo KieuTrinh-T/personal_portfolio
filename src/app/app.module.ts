@@ -16,7 +16,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { PersonalityComponent } from './personality/personality.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillComponent } from './skill/skill.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { LoadingInterceptor } from './loading.interceptor';
 
 
 const routes = [
@@ -36,6 +38,7 @@ const routes = [
     PersonalityComponent,
     FooterComponent,
     SkillComponent,
+    SpinnerComponent,
 
   ],
   imports: [
@@ -49,7 +52,9 @@ const routes = [
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

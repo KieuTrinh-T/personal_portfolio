@@ -409,3 +409,51 @@ mat-card-actions button:hover {
         top: 20%;
     }
 }
+
+
+/*loader*/
+
+.cssload-container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+}
+
+.cssload-speeding-wheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: cssload-spin 3s infinite linear;
+    -o-animation: cssload-spin 3s infinite linear;
+    -ms-animation: cssload-spin 3s infinite linear;
+    -webkit-animation: cssload-spin 3s infinite linear;
+    -moz-animation: cssload-spin 3s infinite linear;
+}
+
+.cssload-speeding-wheel img {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+@keyframes cssload-spin {
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(2) rotate(360deg);
+    }
+}
