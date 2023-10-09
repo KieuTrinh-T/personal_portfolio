@@ -47,9 +47,9 @@ $(document).ready(function() {
                 var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
                 if (scrollTop > 100) {
-                    mainNav.classList.add("navbar-shrink", "bg-dark", "bg-opacity-75");
+                    mainNav.classList.add("navbar-shrink", "bg-opacity-75", "text-light");
                 } else {
-                    mainNav.classList.remove("navbar-shrink", "bg-dark", "bg-opacity-75");
+                    mainNav.classList.remove("navbar-shrink", "bg-opacity-75", "text-dark");
                 }
             };
             // Collapse now if page is not at top

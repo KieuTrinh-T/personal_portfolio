@@ -1,9 +1,5 @@
 <section class="text-dark mb-0" id="project">
     <div class="container py-4 py-xl-5">
-        <div class="bg-img">
-            <img class="blob blur-pink" src="assets/img/blur-pink.png" alt="">
-            <img class="blob blur-blue" src="assets/img/blur-blue.png" alt="">
-        </div>
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
                 <h2 class="text-uppercase text-center text-black">My projects</h2>
@@ -25,12 +21,13 @@
                             <mat-card-content>
                                 <div *ngFor="let content of project.content">
                                     <span class="fs-6 fw-medium">{{ content.section }}</span>
-                                    <p [innerHTML]="breakText(content.text)"></p>
+                                    <p class="ps-xxl-4" [innerHTML]="breakText(content.text)"></p>
                                 </div>
                             </mat-card-content>
                             <mat-card-actions>
-                                <a mat-flat-button color="primary" *ngFor="let action of project.actions" [href]="action.link" target="_blank">
+                                <a *ngFor="let action of project.actions" [href]="action.link" target="_blank">
                                 {{ action.label }}
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
                               </a>
                                 <!-- <button mat-flat-button color="primary" *ngFor="let action of project.actions" [routerLink]="'/' + action.link">
     {{ action.label }}

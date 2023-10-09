@@ -4716,12 +4716,12 @@ fieldset:disabled .btn {
 
 .navbar-dark,
 .navbar[data-bs-theme=dark] {
-    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-color: rgba(182, 174, 174, 0.55);
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
     --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-    --bs-navbar-active-color: #fff;
-    --bs-navbar-brand-color: #fff;
-    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-active-color: #938e8e;
+    --bs-navbar-brand-color: #0e0d0d;
+    --bs-navbar-brand-hover-color: #a7a2a2;
     --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
@@ -12883,7 +12883,7 @@ section .h2 {
 }
 
 #mainNav .navbar-brand {
-    color: #fff
+    /* color: black; */
 }
 
 #mainNav .navbar-nav {
@@ -12892,7 +12892,7 @@ section .h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff
+    color: var(--bs-navbar-color)
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
