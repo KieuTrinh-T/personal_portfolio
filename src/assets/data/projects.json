@@ -184,9 +184,19 @@
             }
         ],
         "actions": [{
-            "label": "View code",
-            "link": "github.com/KieuTrinh-T/AndroidAppProject"
-        }]
+                "label": "View code",
+                "link": "github.com/KieuTrinh-T/AndroidAppProject"
+            },
+            {
+                "label": "View demo Android",
+                "link": "https://youtube.com/shorts/Os45nkme4vM"
+            },
+            {
+                "label": "View demo Flutter",
+                "link": "https://www.youtube.com/watch?v=9Q4QX6Z3Zqo"
+            }
+        ]
+
     },
     {
         "title": "My portfolio website",

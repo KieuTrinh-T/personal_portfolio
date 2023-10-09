@@ -29,9 +29,12 @@
                                 </div>
                             </mat-card-content>
                             <mat-card-actions>
-                                <button mat-flat-button color="primary" *ngFor="let action of project.actions" [routerLink]="'/' + action.link">
+                                <a mat-flat-button color="primary" *ngFor="let action of project.actions" [href]="action.link" target="_blank">
+                                {{ action.label }}
+                              </a>
+                                <!-- <button mat-flat-button color="primary" *ngFor="let action of project.actions" [routerLink]="'/' + action.link">
     {{ action.label }}
-  </button>
+  </button> -->
                             </mat-card-actions>
                         </mat-card>
                     </ng-container>
