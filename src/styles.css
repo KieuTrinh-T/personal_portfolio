@@ -13,7 +13,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(40%) translateY(100%);
+        transform: translateX(40%) translateY(50%);
     }
 }
 
@@ -22,7 +22,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-30%) translateY(100%);
+        transform: translateX(-30%) translateY(50%);
     }
 }
 
