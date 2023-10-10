@@ -391,6 +391,8 @@ mat-card-actions a {
 
 mat-card-actions a:hover {
     color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+    background-color: var(--bs-info) rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
