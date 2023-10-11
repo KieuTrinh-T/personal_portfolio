@@ -10,10 +10,10 @@
 
 @keyframes blue-move {
     from {
-        transform: translateX(0);
+        transform: translateX(-10%);
     }
     to {
-        transform: translateX(-10%) translateY(70%);
+        transform: translateX(2%) translateY(70%);
     }
 }
 
@@ -289,15 +289,15 @@
 
 .blob.laptop {
     width: 25%;
-    left: 0rem;
+    left: 3rem;
     z-index: 20;
-    transform: translateX(-5rem) translateY(-10rem);
     animation: rotateX 5s ease infinite alternate;
 }
 
 .blob.headphone {
     width: 15%;
-    right: 5rem;
+    top: 15rem;
+    right: 0rem;
     z-index: 20;
     animation: rotateY 7s infinite alternate;
 }
@@ -349,7 +349,7 @@
     z-index: -100;
     bottom: 20%;
     left: 0%;
-    opacity: 0.2;
+    opacity: 0.1;
     animation-name: hue-shift, pink-move;
     animation-duration: 20s, 15s;
     animation-direction: alternate;
@@ -362,7 +362,7 @@
     z-index: -105;
     bottom: 30%;
     right: 0%;
-    opacity: 0.15;
+    opacity: 0.1;
     animation-name: hue-shift, blue-move;
     animation-duration: 5s, 20s;
     animation-direction: alternate;
@@ -411,10 +411,16 @@ mat-card-actions a:hover {
     }
     .blob.cube {
         width: 30%;
-        transform: translateX(-30%), translateY(10%);
+        top: 75%;
+        transform: translateX(-30%) translateY(-30%);
     }
     .blob.gradient {
         width: 40%;
+        top: 20%;
+    }
+    .blob.headphone,
+    .blob.laptop {
+        width: 30%;
         top: 20%;
     }
 }

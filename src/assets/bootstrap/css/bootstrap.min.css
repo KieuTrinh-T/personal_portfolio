@@ -2929,6 +2929,10 @@ textarea.form-control-lg {
     z-index: 5
 }
 
+.z-index-15 {
+    z-index: 15;
+}
+
 .input-group-text {
     display: flex;
     align-items: center;
@@ -12871,8 +12875,9 @@ section .h2 {
 .scroll-to-top a {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: rgba(33, 37, 41, .5);
-    line-height: 3.1rem
+    background-color: var(--bs-scroll-top);
+    line-height: 3.1rem;
+    border-radius: 20rem;
 }
 
 #mainNav {

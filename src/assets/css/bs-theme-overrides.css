@@ -28,6 +28,7 @@
     --bs-link-hover-color-rgb: 241, 180, 187;
     --step: 53;
     --bs-logo: url("assets/images/LOGO.png");
+    --bs-scroll-top: #aed2ff5a;
 }
 
 .btn-primary {
