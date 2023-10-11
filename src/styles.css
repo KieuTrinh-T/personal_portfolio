@@ -13,7 +13,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(40%) translateY(50%);
+        transform: translateX(-10%) translateY(70%);
     }
 }
 
@@ -22,7 +22,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-30%) translateY(50%);
+        transform: translateX(-30%) translateY(90%);
     }
 }
 
@@ -340,12 +340,16 @@
     align-items: center;
 }
 
+.bg-img {
+    width: 100%;
+}
+
 .blob.blur-pink {
-    width: 300%;
+    width: 100%;
     z-index: -100;
-    bottom: 40%;
-    left: 20%;
-    opacity: 0.3;
+    bottom: 20%;
+    left: 0%;
+    opacity: 0.2;
     animation-name: hue-shift, pink-move;
     animation-duration: 20s, 15s;
     animation-direction: alternate;
@@ -354,11 +358,11 @@
 }
 
 .blob.blur-blue {
-    width: 500%;
+    width: 90%;
     z-index: -105;
     bottom: 30%;
-    right: 20%;
-    opacity: 0.3;
+    right: 0%;
+    opacity: 0.15;
     animation-name: hue-shift, blue-move;
     animation-duration: 5s, 20s;
     animation-direction: alternate;
