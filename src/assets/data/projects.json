@@ -91,7 +91,7 @@
         ],
         "actions": [{
                 "label": "View website",
-                "link": "https://www.freshie.live/"
+                "link": "https://freshie-project.vercel.app"
             },
             {
                 "label": "View code",
