@@ -17,4 +17,5 @@ export class PopupComponent {
     }
     return text;
   }
+
 }

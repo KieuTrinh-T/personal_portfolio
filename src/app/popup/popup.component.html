@@ -1,7 +1,23 @@
-<section class="p-4">
-    <h2 class="text-center lh-base">{{data.Title}}</h2>
-    <div *ngFor="let content of data.Content">
-        <span class="fs-6 fw-medium">{{ content.Section }}</span>
-        <p class="ps-xxl-4" [innerHTML]="breakText(content.Text)"></p>
+<section class="p-4 p-md-2 z-index-15">
+    <div class="d-flex justify-content-end tran-bg">
+        <a mat-button matDialogClose>
+            <mat-icon>close</mat-icon>
+        </a>
     </div>
+    <mat-dialog-content>
+        <h3 mat-dialog-title class="text-center lh-base">{{data.Title}}</h3>
+        <div *ngFor="let content of data.Content" class="row col-10 m-auto tran-bg">
+            <div>
+                <span class="fs-6 fw-medium">{{ content.Section }}</span>
+                <p class="ps-xxl-4" [innerHTML]="breakText(content.Text)"></p>
+            </div>
+        </div>
+
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <div class="row col-10 d-flex justify-content-end m-auto tran-bg">
+            <a *ngFor="let action of data.Actions" class="btn-a offset-1" href={{action.Link}} target="_blank">{{action.Label}}</a>
+        </div>
+    </mat-dialog-actions>
+
 </section>

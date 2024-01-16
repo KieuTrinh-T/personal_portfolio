@@ -1,4 +1,4 @@
-<section class="text-dark mb-0" id="project">
+<section class="text-dark mb-0" id="projects">
     <div class="container py-4 py-xl-5">
         <div class="row">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -14,7 +14,7 @@
         <div class="row justify-content-start">
             <ng-container *ngFor="let project of projects">
                 <div *ngIf="project.IsVisible" class="col-xl-6 col-md-6 p-2">
-                    <mat-card class="pb-4 min-h100 m-lg-2 m-md-2 m-sm-2" (click)="openPersonalProjectDialog(project)">
+                    <mat-card class="pb-4 min-h100 m-lg-2 m-md-2 m-sm-2 cursor-pointer opacity-bg-5" (click)="openPersonalProjectDialog(project)">
                         <mat-card-header>
                             <mat-card-title-group>
                                 <img mat-card-md-image src="{{ project.Image }}" alt="project">
