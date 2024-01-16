@@ -1,0 +1,7 @@
+<section class="p-4">
+    <h2 class="text-center lh-base">{{data.Title}}</h2>
+    <div *ngFor="let content of data.Content">
+        <span class="fs-6 fw-medium">{{ content.Section }}</span>
+        <p class="ps-xxl-4" [innerHTML]="breakText(content.Text)"></p>
+    </div>
+</section>

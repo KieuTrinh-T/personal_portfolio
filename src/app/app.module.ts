@@ -10,22 +10,27 @@ import { MatButtonModule, MatIconButton } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ProjectComponent } from './project/project.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { PersonalityComponent } from './personality/personality.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillComponent } from './skill/skill.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { LoadingInterceptor } from './loading.interceptor';
+import { PopupComponent } from './popup/popup.component';
 
 
 const routes = [
   { path: '', component: HomepageComponent },
   { path: 'about-me', component: AboutMeComponent },
-  { path: 'projects',
-    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) }
+  {
+    path: 'projects',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+  }
 ];
 @NgModule({
   declarations: [
@@ -39,6 +44,7 @@ const routes = [
     FooterComponent,
     SkillComponent,
     SpinnerComponent,
+    PopupComponent,
 
   ],
   imports: [
@@ -49,7 +55,9 @@ const routes = [
     MatIconModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule,
+    MatDialogModule,
 
   ],
   providers: [{

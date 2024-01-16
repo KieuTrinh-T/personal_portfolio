@@ -9,7 +9,7 @@
 }
 
 .btn-social {
-    background: linear-gradient(rgba(138, 208, 251, 0.325), rgba(252, 148, 247, 0.237));
+    background: var(--bs-gradient-primary-secondary);
 }
 
 .btn-social:hover {

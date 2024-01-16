@@ -1,30 +1,19 @@
-<!-- <section>
-    <h2>What can I do?</h2>
-    <div class="full-on-phone">
-        <div class="container column-on-phone">
-            <div>
-                <h3>Data-related</h3>
-                <ul>
-                    <li>Be Familiar with: Python, SQL, PowerBI</li>
-                    <li>Collect data from various sources</li>
-                    <li>Process data</li>
-                    <li>Visualize data</li>
-                    <li>Build machine learning models</li>
-                    <li>Deploy model using Flask</li>
-                    <li>Have experienced Spark, Kafka, SSIS</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Additional</h3>
-                <ul>
-                    <li>Web development: HTML, CSS, JavaScript, Angular, NodeJS, ExpressJS, MongoDB</li>
-                    <li>Mobile app development: Android, Flutter</li>
-                    <li>Microsoft Office: Word, Excel, PowerPoint</li>
-                    <li>Design: Adobe Photoshop, Adobe Illustrator</li>
-                    <li>Version control: Git, Github</li>
-                </ul>
+<section>
+    <h2 class="text-uppercase text-center mb-4">What can I do?</h2>
+    <div class="row justify-content-around col-10 m-auto">
+        <ng-container *ngFor="let skill of skills">
+            <mat-card class="p-4 min-h100 col-xl-5 col-md-5 m-lg-2 m-md-2 m-sm-2 opacity-bg-5">
+                <img class="w-10 m-auto" src="{{ skill.Icon }}" alt="skill">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>{{ skill.Title }}</mat-card-title>
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content>
+                    <li *ngFor="let node of skill.Details">{{ node }}</li>
+                </mat-card-content>
+            </mat-card>
 
-            </div>
-        </div>
+        </ng-container>
     </div>
-</section> -->
+</section>

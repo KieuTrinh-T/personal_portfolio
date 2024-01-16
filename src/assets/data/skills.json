@@ -1,0 +1,42 @@
+[{
+        "Title": "Data Analytics",
+        "Icon": "https://img.icons8.com/pastel-glyph/64/1A1A1A/financial-growth-analysis--v1.png",
+        "Details": [
+            "Familiar with Python, SQL, and Power BI",
+            "Experience with data crawling and data cleaning",
+            "Experience with data visualization and data analysis",
+            "Understanding of machine learning and deep learning"
+        ]
+    },
+    {
+        "Title": "Web Development",
+        "Icon": "https://img.icons8.com/pastel-glyph/100/1A1A1A/web--v2.png",
+        "Details": [
+            "Familiar with HTML, CSS, JavaScript",
+            "Experience with Angular and React",
+            "Experience with Bootstrap, jQuery, and AJAX",
+            "Experience with MySQL and MongoDB",
+            "Familiar with Node.js and Express.js"
+        ]
+    },
+    {
+        "Title": "Programming",
+        "Icon": "https://img.icons8.com/ios/100/1A1A1A/programming.png",
+        "Details": [
+            "Familiar with Python, Go",
+            "Experience with Git, GitHub and GitLab"
+        ]
+    },
+    {
+        "Title": "Others",
+        "Icon": "https://img.icons8.com/external-neu-royyan-wijaya/100/1A1A1A/external-artist-neu-design-neu-royyan-wijaya.png",
+        "Details": [
+            "Experience with Agile and Scrum",
+            "Experience with Jira and Confluence",
+            "Experience with Microsoft Office",
+            "Familiar with Figma, Draw.io, and Lucidchart",
+            "Designing with Adobe Photoshop and Adobe Illustrator"
+        ]
+    }
+
+]
