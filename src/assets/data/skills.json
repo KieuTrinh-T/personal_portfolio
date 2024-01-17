@@ -9,22 +9,24 @@
         ]
     },
     {
-        "Title": "Web Development",
+        "Title": "Front-end Development",
         "Icon": "https://img.icons8.com/pastel-glyph/100/1A1A1A/web--v2.png",
         "Details": [
             "Familiar with HTML, CSS, JavaScript",
             "Experience with Angular and React",
             "Experience with Bootstrap, jQuery, and AJAX",
-            "Experience with MySQL and MongoDB",
             "Familiar with Node.js and Express.js"
         ]
     },
     {
-        "Title": "Programming",
+        "Title": "Back-end Development",
         "Icon": "https://img.icons8.com/ios/100/1A1A1A/programming.png",
         "Details": [
             "Familiar with Python, Go",
-            "Experience with Git, GitHub and GitLab"
+            "Experience with Git, GitHub and GitLab",
+            "Understanding of RESTful API",
+            "Understanding of Clean Architecture and Microservices",
+            "Experience with MySQL and MongoDB"
         ]
     },
     {
