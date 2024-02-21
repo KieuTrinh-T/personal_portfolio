@@ -1,4 +1,29 @@
 [{
+        "ID": 10,
+        "Title": "Personal project: Analysis on Book Dataset",
+        "Subtitle": "Feb, 2024",
+        "Label": "Data Analytics",
+        "Image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Content": [{
+                "Section": "Description",
+                "Text": "This project is to analyze a book dataset, which contains information about books, authors, and ratings."
+            },
+            {
+                "Section": "Content",
+                "Text": "Crawl data from Tiki<br>Preprocess data<br>Import dataset into SQL Server<br>Exploratory Data Analysis<br>Create Dashboard with Power BI"
+            },
+            {
+                "Section": "Tools Used",
+                "Text": "Python, Power BI, SQL"
+            }
+        ],
+        "Actions": [{
+            "Label": "View dashboard",
+            "Link": "https://yphxk-my.sharepoint.com/:u:/g/personal/kieutrinh_yphxk_onmicrosoft_com/EZ9dcc6RkThHpKu_4mv-cgoB4vC6NV5J4cA9J7bMsm6mmA?e=0Erw13"
+        }]
+
+    },
+    {
         "ID": 1,
         "Title": "Customer Segment with RFM",
         "Subtitle": "Jul, 2023",
@@ -256,4 +281,5 @@
         ]
 
     }
+
 ]

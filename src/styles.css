@@ -519,7 +519,6 @@ mat-card-actions a:hover {
     padding: 0.1rem 0.5rem;
     transition: all 0.3s ease;
     background: var(--bs-gradient-info);
-    border: var(--bs-gray-dark) 0.3px solid;
     color: var(--bs-gray-dark);
     border-radius: var(--bs-border-radius-lg);
     cursor: pointer;
@@ -531,7 +530,7 @@ mat-card-actions a:hover {
 .btn-a:hover {
     background-color: var(--bs-info) rgba(0, 0, 0, 0.2);
     color: var(--bs-primary);
-    border: var(--bs-primary) 0.3px solid;
+    /* border: var(--bs-primary) 0.3px solid; */
     transform: scale(1.1);
 }
 
